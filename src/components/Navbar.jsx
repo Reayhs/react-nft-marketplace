@@ -82,9 +82,9 @@ function Navbar() {
             </li>
           </ul>
         </div>
-        <div className="right ct:flex ct:gap-10 items-center hover:font-bold  ">
-          <button className="border border-solid border-[#b210f2] px-5 py-3 rounded-2xl text-sm text-white ">
-            <Link to="/wallet"> <i className="fa-solid fa-credit-card text-white pr-2 "></i>{" "}
+        <div className="right ct:flex ct:gap-4 items-center hover:font-bold  ">
+          <button className="border border-solid border-[#b210f2] px-5 tl:px-2 py-3 tl:py-2 rounded-2xl text-sm tl:text-[12px] text-white ">
+            <Link to="/wallet"> <i className="fa-solid fa-credit-card text-white pr-2  tl:text-[12px] "></i>{" "}
               Connect Wallet</Link>
           </button>
           <i
