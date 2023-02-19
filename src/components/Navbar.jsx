@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { useLocation } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 function Navbar() {
   const [status, setStatus] = useState(true);
@@ -40,43 +40,45 @@ function Navbar() {
         >
           <ul className="flex gap-10 text-lg font-bold text-white ct:flex-col ct:text-center ct:justify-center ct:gap-12 ct:text-2xl ct:pb-14 ct:absolute ct:w-full ct:bg-[#343444] ct:h-full tl:gap-10 ">
             <li>
-              <a
-                href="/"
-                className={`${location.pathname === "/" && "text-[#b210f2]"}`}
+              <Link
+                to="/"
+                className={`${
+                  location.pathname === "/" && "text-[#b210f2]"
+                }`}
               >
                 Home
-              </a>
+              </Link>
             </li>
             <li>
-              <a
-                href="/market"
+              <Link
+                to="/market"
                 className={`${
                   location.pathname === "/market" && "text-[#b210f2]"
                 }`}
               >
                 Market
-              </a>
+              </Link>
             </li>
             <li>
-              <a
-                href="/create"
+              <Link
+                to="/create"
                 className={`${
                   location.pathname === "/create" && "text-[#b210f2]"
                 }`}
               >
-               Create
-              </a>
+                Create
+              </Link>
             </li>
 
             <li>
-              <a
-                href="/contact"
+              <Link
+                to="/contact"
                 className={`${
                   location.pathname === "/contact" && "text-[#b210f2]"
                 }`}
               >
-                Contact
-              </a>
+                Home
+              </Link>
             </li>
           </ul>
         </div>
@@ -87,6 +89,7 @@ function Navbar() {
               <i className="fa-solid fa-credit-card text-white pr-2 "></i>{" "}
               Connect Wallet
             </a>
+            <Link to="wallet">Home</Link>
           </button>
           <i
             onClick={() => setStatus(!status)}
