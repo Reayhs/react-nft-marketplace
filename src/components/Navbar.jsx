@@ -77,19 +77,15 @@ function Navbar() {
                   location.pathname === "/contact" && "text-[#b210f2]"
                 }`}
               >
-                Home
+                Contact
               </Link>
             </li>
           </ul>
         </div>
         <div className="right ct:flex ct:gap-10 items-center hover:font-bold  ">
           <button className="border border-solid border-[#b210f2] px-5 py-3 rounded-2xl text-sm text-white ">
-            <a href="wallet">
-              {" "}
-              <i className="fa-solid fa-credit-card text-white pr-2 "></i>{" "}
-              Connect Wallet
-            </a>
-            <Link to="wallet">Home</Link>
+            <Link to="wallet"> <i className="fa-solid fa-credit-card text-white pr-2 "></i>{" "}
+              Connect Wallet</Link>
           </button>
           <i
             onClick={() => setStatus(!status)}
