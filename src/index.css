@@ -1,0 +1,84 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body,html{
+    overflow-x: hidden;
+}
+
+body{
+    background-color: #14141f;
+    color: white;
+ 
+}
+nav h1{
+    background-size: 100% 100%;
+    -webkit-background-clip: text;
+    -webkit-text-stroke: 3px transparent;
+    -webkit-text-fill-color: #14141f;
+}
+nav .left i {
+    background-size: 100% 100%;
+    -webkit-background-clip: text;
+    -webkit-text-stroke: 3px transparent;
+    -webkit-text-fill-color: #14141f;
+}
+
+footer h1{
+    background-size: 100% 100%;
+    -webkit-background-clip: text;
+    -webkit-text-stroke: 3px transparent;
+    -webkit-text-fill-color: #14141f;
+}
+
+
+footer i{
+    background-size: 100% 100%;
+    -webkit-background-clip: text;
+    -webkit-text-stroke: 3px transparent;
+    -webkit-text-fill-color: #14141f;
+}
+header span{
+    background-size: 100% 100%;
+    -webkit-background-clip: text;
+    -webkit-text-stroke: 3px transparent;
+    -webkit-text-fill-color: #14141f;
+}
+
+.blabla h4{
+    cursor: pointer;
+}
+
+.blabla h4:hover{
+   font-size: 16px;
+   transition: all 0.4s;
+   font-weight: bold;
+}
+.sellerimg img:hover{
+    transition: all 0.6s;
+    padding: 10px;
+}
+
+header {
+    opacity: 0;
+    transition: opacity 500ms;
+  }
+
+  header{
+    opacity: 1;
+  }
+
+  .modalll{
+    position: fixed;
+    top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: rgba(0,0,0,0.8);
+	z-index: 99999;
+  }
+  
+  .modall{
+    transform: translate(-50%, -50%);
+  }
