@@ -8,9 +8,12 @@ import Market from "./components/Market";
 import Contact from "./components/Contact";
 import Wallet from "./components/Wallet";
 import Create from "./components/Create";
+import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
   return (
+    <>
+    <ScrollToTop/>
     <Routes>
       <Route path="/" element={<Home/>} />
       <Route path="market" element={<Market/>} />
@@ -18,6 +21,7 @@ function App() {
       <Route path="wallet" element={<Wallet/>} />
       <Route path="create" element={<Create/>} />
     </Routes>
+    </>
   );
 }
 
